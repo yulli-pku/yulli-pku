@@ -95,7 +95,7 @@ st.error("Error message")
 st.warning("Warning message")
 st.info("Info message")
 st.success("Success message")
-st.exception(e)
+
     
 if __name__ == '__main__' : 
   main()
