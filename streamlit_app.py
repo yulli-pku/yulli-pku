@@ -100,10 +100,13 @@ def main() :
   
   with st.chat_message("user"):
     st.write("Hello 👋")
-
-# Display a chat input widget at the bottom of the app.
+    # Display a chat input widget at the bottom of the app.
     st.chat_input("Say something")
-
+    # Display a chat input widget inline.
+    
+  with st.container():
+    st.chat_input("Say something")
+    
 
 if __name__ == '__main__' : 
   main()
