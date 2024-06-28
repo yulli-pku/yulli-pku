@@ -41,7 +41,6 @@ def main() :
 
 #sidebar 
   sidebar_header=st.sidebar.subheader('Sidebar menu')
-  st.sidebar.selectbox("Pilih data", ["PT meong", "PT siapa"])
   nm=st.sidebar.selectbox("Pilih data", ["PT meong", "PT siapa"])
   st.sidebar.write("nama WP:",nm)
   sidebar_checkbox = st.sidebar.checkbox('Checkbox di Sidebar')
