@@ -43,7 +43,7 @@ def main() :
   sidebar_radio_button = st.sidebar.radio('Pilih Menu',options=['A','B','C'])
     
   #columns :
-  col1, col2, col3 = st.columns(1,2,1)
+  col1, col2, col3 = st.columns(4)
 
   with col1:
     st.header("A cat")
