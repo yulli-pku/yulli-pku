@@ -76,7 +76,7 @@ def main() :
   st.write("Outside the form")
 
 #tab
-  tab1,tab2=st.tabs("Tab 1","Tab 2")
+  tab1,tab2=st.tabs(["Tab 1","Tab 2"])
   tab1.write("this is tab 1")
   tab2.write("this is tab 2")
 if __name__ == '__main__' : 
