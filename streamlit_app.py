@@ -37,6 +37,7 @@ def main() :
   #Input (Typing)
   num_input = st.number_input('Input Berapapun')
   st.write('Kuadrat dari {} adalah {}'.format(num_input,num_input**2))
+  st.write('Kuadrat dari {num_input} adalah {num_input**2}')
 
 if __name__ == '__main__' : 
   main()
