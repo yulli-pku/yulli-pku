@@ -103,7 +103,8 @@ def main() :
     # Display a chat input widget at the bottom of the app.
     st.chat_input("Say something")
     # Display a chat input widget inline.
-
+    msg=st.chat_input("Say something")
+    st.write(msg)
     
 
 if __name__ == '__main__' : 
