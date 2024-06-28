@@ -17,7 +17,7 @@ def main() :
     with icol3:
       idata3=st.text_input("input nilai data3")
       
-    klikresult = st.button('submit')
+    klikresult = st.form_submit_button('submit')
     if klikresult :
       st.success(idata2)
 
