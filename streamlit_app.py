@@ -14,7 +14,7 @@ def main() :
 house=pd.read_csv("https://raw.githubusercontent.com/yulli-pku/yulli-pku/main/house_clean.csv")
 
  st.write('Contoh dataframe')
- st.dataframe(titanic)
+ st.dataframe(house)
  st.write('Contoh JSON')
  st.json(flight_passanger_api)
  st.write('Metrics')
