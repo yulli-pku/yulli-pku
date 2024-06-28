@@ -74,6 +74,6 @@ with st.form("Data Diri"):
   
   st.write("Outside the form")
   
-  if __name__ == '__main__' : 
+if __name__ == '__main__' : 
   main()
 
