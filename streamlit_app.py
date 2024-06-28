@@ -8,9 +8,7 @@ house=pd.read_csv("https://raw.githubusercontent.com/yulli-pku/yulli-pku/main/ho
 
 def main() : 
   with st.form("Input variable prediktif"):
-    icol1,icol2,icol3=st.columns(3)
- 
-  
+
   st.write('Minimal Example')
 
   st.header('Halaman Streamlit Yulli')
