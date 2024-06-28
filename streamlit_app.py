@@ -79,6 +79,15 @@ def main() :
   tab1,tab2=st.tabs(["Tab 1","Tab 2"])
   tab1.write("this is tab 1")
   tab2.write("this is tab 2")
+
+  with tab1:
+    radio1=st.radio('Select one',[x for x in range(1,4)])
+    st.write('Anda Memilih',radio1)
+    
+  with tab2:
+    radio2=st.radio('Select one',['A','B'])
+    st.write('Anda Memilih',radio2)
+    
 if __name__ == '__main__' : 
   main()
 
