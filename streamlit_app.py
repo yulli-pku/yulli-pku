@@ -96,6 +96,16 @@ st.warning("Warning message")
 st.info("Info message")
 st.success("Success message")
 
+with st.chat_message("user"):
+    st.write("Hello 👋")
+    st.line_chart(np.random.randn(30, 3))
+
+# Display a chat input widget at the bottom of the app.
+>>> st.chat_input("Say something")
+
+# Display a chat input widget inline.
+with st.container():
+    st.chat_input("Say something")
     
 if __name__ == '__main__' : 
   main()
