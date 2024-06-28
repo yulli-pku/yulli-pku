@@ -7,6 +7,14 @@ from st_aggrid import AgGrid
 house=pd.read_csv("https://raw.githubusercontent.com/yulli-pku/yulli-pku/main/house_clean.csv")
 
 def main() : 
+  
+  idata1=st.text_input("input nilai data1")
+  idata2=st.text_input("input nilai data2")
+  klikresult = st.button('submit')
+  if klikresult :
+    st.success(idata2)
+
+  
   st.write('Minimal Example')
 
   st.header('Halaman Streamlit Yulli')
@@ -110,11 +118,6 @@ def main() :
     msg=st.chat_input("Say something")
     st.write(msg)
 
-  idata1=st.text_input("input nilai data1")
-  idata2=st.text_input("input nilai data2")
-  klikresult = st.button('submit')
-  if klikresult :
-    st.success(idata2)
 if __name__ == '__main__' : 
   main()
 
