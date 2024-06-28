@@ -7,18 +7,19 @@ from st_aggrid import AgGrid
 house=pd.read_csv("https://raw.githubusercontent.com/yulli-pku/yulli-pku/main/house_clean.csv")
 
 def main() : 
-  icol1,icol2,icol3=st.columns(3)
-  
-  with icol1:
-    idata1=st.text_input("input nilai data1")
-  with icol2:
-    idata2=st.text_input("input nilai data2")
-  with icol3:
-    idata3=st.text_input("input nilai data3")
+  with st.form("Data Diri"):
+    icol1,icol2,icol3=st.columns(3)
     
-  klikresult = st.button('submit')
-  if klikresult :
-    st.success(idata2)
+    with icol1:
+      idata1=st.text_input("input nilai data1")
+    with icol2:
+      idata2=st.text_input("input nilai data2")
+    with icol3:
+      idata3=st.text_input("input nilai data3")
+      
+    klikresult = st.button('submit')
+    if klikresult :
+      st.success(idata2)
 
   
   st.write('Minimal Example')
