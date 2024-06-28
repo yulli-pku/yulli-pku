@@ -41,9 +41,9 @@ def main() :
 
 #sidebar 
   sidebar_header=st.sidebar.subheader('Sidebar menu')
-  st.selectbox("Pilih data", ["PT meong", "PT siapa"])
-  nm=st.selectbox("Pilih data", ["PT meong", "PT siapa"])
-  st.write("nama WP:",nm)
+  st.sidebar.selectbox("Pilih data", ["PT meong", "PT siapa"])
+  nm=st.sidebar.selectbox("Pilih data", ["PT meong", "PT siapa"])
+  st.sidebar.write("nama WP:",nm)
   sidebar_checkbox = st.sidebar.checkbox('Checkbox di Sidebar')
   sidebar_radio_button = st.sidebar.radio('Pilih Menu',options=['A','B','C'])
 
