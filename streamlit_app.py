@@ -87,6 +87,15 @@ def main() :
   with tab2:
     radio2=st.radio('Select one',['A','B'])
     st.write('Anda Memilih',radio2)
+
+st.balloons()
+st.snow()
+st.toast("Warming up...")
+st.error("Error message")
+st.warning("Warning message")
+st.info("Info message")
+st.success("Success message")
+st.exception(e)
     
 if __name__ == '__main__' : 
   main()
