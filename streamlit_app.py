@@ -40,9 +40,10 @@ def main() :
   st.write('Kuadrat dari {} adalah {}'.format(num_input,num_input**2))
 
 #sidebar 
+  sidebar_header=st.sidebar.subheader('Sidebar menu')
   sidebar_checkbox = st.sidebar.checkbox('Checkbox di Sidebar')
   sidebar_radio_button = st.sidebar.radio('Pilih Menu',options=['A','B','C'])
-  sidebar_header=st.sidebar.subheader("Sidebar menu")
+
     
   #columns :
   col1, col2, col3 = st.columns(3)
