@@ -11,7 +11,7 @@ def main() :
   st.write('Some Phytagorean Equation : ')
   st.latex('c^2 = a^2+b^2')
 
-house=pd.read_csv()
+house=pd.read_csv("https://raw.githubusercontent.com/yulli-pku/yulli-pku/main/house_clean.csv")
 
  st.write('Contoh dataframe')
  st.dataframe(titanic)
