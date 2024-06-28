@@ -27,7 +27,7 @@ def main() :
   if check_btn :
     st.write('Anda Setuju')
     
-  radio_button= st.radio('Choose below',[x for x in range(1,3)])
+  radio_button= st.radio('Choose below',[x for x in range(1,4)])
   st.write('Anda Memilih',radio_button)
     
   #slider 
