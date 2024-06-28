@@ -1,8 +1,7 @@
 import streamlit as st 
 import pandas as pd 
 import requests
-from streamlit_aggrid import AgGrid
-#from st_aggrid import AgGrid
+from st_aggrid import AgGrid
 
 house=pd.read_csv("https://raw.githubusercontent.com/yulli-pku/yulli-pku/main/house_clean.csv")
 
