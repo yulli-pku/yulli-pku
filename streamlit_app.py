@@ -109,8 +109,10 @@ def main() :
     # Display a chat input widget inline.
     msg=st.chat_input("Say something")
     st.write(msg)
-    
 
+idata1=st.text_input("input nilai data1")
+idata2=st.text_input("input nilai data2")
+st.success("result:",idata1+idata2)
 if __name__ == '__main__' : 
   main()
 
