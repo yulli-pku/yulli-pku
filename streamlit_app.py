@@ -101,7 +101,7 @@ def main() :
   with st.chat_message("user"):
     st.write("Hello 👋")
     # Display a chat input widget at the bottom of the app.
-    st.chat_input("Say something")
+    #st.chat_input("Say something")
     # Display a chat input widget inline.
     msg=st.chat_input("Say something")
     st.write("hah",msg)
