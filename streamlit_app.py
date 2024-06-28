@@ -104,7 +104,7 @@ def main() :
     st.chat_input("Say something")
     # Display a chat input widget inline.
     msg=st.chat_input("Say something")
-    st.write(msg)
+    st.write("hah",msg)
     
 
 if __name__ == '__main__' : 
