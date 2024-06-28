@@ -112,7 +112,7 @@ def main() :
 
 idata1=st.text_input("input nilai data1")
 idata2=st.text_input("input nilai data2")
-st.success("result:",idata1+idata2)
+st.success("result:",idata2)
 if __name__ == '__main__' : 
   main()
 
