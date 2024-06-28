@@ -113,8 +113,8 @@ def main() :
   idata1=st.text_input("input nilai data1")
   idata2=st.text_input("input nilai data2")
   klikresult = st.button('submit')
-    if klikresult :
-      st.success(idata2)
+  if klikresult :
+    st.success(idata2)
 if __name__ == '__main__' : 
   main()
 
