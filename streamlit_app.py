@@ -42,6 +42,7 @@ def main() :
 #sidebar 
   sidebar_checkbox = st.sidebar.checkbox('Checkbox di Sidebar')
   sidebar_radio_button = st.sidebar.radio('Pilih Menu',options=['A','B','C'])
+  sidebar_header=st.sidebar.subheader("Sidebar menu")
     
   #columns :
   col1, col2, col3 = st.columns(3)
