@@ -20,7 +20,7 @@ def main() :
       idata3=st.text_input("input nilai data3")
       
     klikresult = st.form_submit_button('Cek Result')
-    if klikresult :
+    if klikresult:
       if st.success(idata2)=='tidak sakit':
         st.balloons()
         st.snow()
