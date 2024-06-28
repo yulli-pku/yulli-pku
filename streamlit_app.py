@@ -1,7 +1,7 @@
 import streamlit as st 
 import pandas as pd 
 import requests
-import streamlit_aggrid
+#import streamlit_aggrid
 
 from st_aggrid import AgGrid
 
