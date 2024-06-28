@@ -7,8 +7,9 @@ from st_aggrid import AgGrid
 house=pd.read_csv("https://raw.githubusercontent.com/yulli-pku/yulli-pku/main/house_clean.csv")
 
 def main() : 
-  st.header('Input Variable Prediktif')
+
   with st.form("Inputvar"):
+    st.header('Input Variable Prediktif')
     icol1,icol2,icol3=st.columns(3)
     
     with icol1:
