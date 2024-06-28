@@ -22,7 +22,7 @@ def main() :
     klikresult = st.form_submit_button('Cek Result')
     if klikresult :
       st.success(idata2)
-    if st.success(idata2)='tidak sakit':
+    if idata2='tidak sakit':
       st.balloons()
       st.snow()
         
