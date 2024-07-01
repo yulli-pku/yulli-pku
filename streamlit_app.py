@@ -17,11 +17,12 @@ WindSpeed= st.number_input('Input WindSpeed')
 RespiratoryCases= st.number_input('Input RespiratoryCases')
 CardiovascularCases	= st.number_input('Input CardiovascularCases')
 HospitalAdmissions= st.number_input('Input HospitalAdmissions')
+HealthImpactClass= st.number_input('Input HealthImpactClass')
 
 predict = ''
 
 if st.button('Cek Air Quality'):
     predict = model.predict(
-        [[AQI,PM10,PM2_5,NO2,SO2,O3,Temperature,Humidity,WindSpeed,RespiratoryCases,CardiovascularCases,HospitalAdmissions]]
+        [[AQI,PM10,PM2_5,NO2,SO2,O3,Temperature,Humidity,WindSpeed,RespiratoryCases,CardiovascularCases,HospitalAdmissions,HealthImpactClass]]
     )
     st.write ('Cek Air Quality : ', predict)
