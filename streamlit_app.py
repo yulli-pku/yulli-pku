@@ -2,8 +2,8 @@ import pickle
 import streamlit as st
 
 model = pickle.load(open('knn_model.pkl', 'rb'))
-st.image("kotaair.png")
 st.title('Cek Air Quality')
+st.image("kotaair.png")
 
 with st.form("Inputvar"):
     st.sidebar.header('Input Variable Prediktif Air')
