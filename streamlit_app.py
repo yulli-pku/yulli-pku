@@ -5,15 +5,22 @@ model = pickle.load(open('knn_mode.pkl', 'rb'))
 
 st.title('Cek Air Quality')
 
-year = st.number_input('Input Tahun Mobil')
-mileage = st.number_input('Input Km Mobil')
-tax = st.number_input('Input Pajak Mobil')
-mpg = st.number_input('Input Konsumsi BBM Mobil')
-engineSize = st.number_input('Input Engine Size')
+AQI= st.number_input('Input AQI')
+PM10= st.number_input('Input PM10')
+PM2_5= st.number_input('Input PM2_5')	
+NO2= st.number_input('Input NO2')
+SO2= st.number_input('Input SO2')	
+O3= st.number_input('Input O3')
+Temperature= st.number_input('Input Temperature')
+Humidity= st.number_input('Input Humidity')	
+WindSpeed= st.number_input('Input WindSpeed')
+RespiratoryCases= st.number_input('Input RespiratoryCases')
+CardiovascularCases	= st.number_input('Input CardiovascularCases')
+HospitalAdmissions= st.number_input('Input HospitalAdmissions')
 
 predict = ''
 
-if st.button('Estimasi Harga'):
+if st.button('Cek Air Quality'):
     predict = model.predict(
         [[year, mileage, tax, mpg, engineSize]]
     )
