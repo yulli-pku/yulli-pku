@@ -1,9 +1,9 @@
 import pickle
 import streamlit as st
 
-model = pickle.load(open('estimasi_mobil.sav', 'rb'))
+model = pickle.load(open('knn_mode.pkl', 'rb'))
 
-st.title('Estimasi Harga Mobil Bekas')
+st.title('Cek Air Quality')
 
 year = st.number_input('Input Tahun Mobil')
 mileage = st.number_input('Input Km Mobil')
