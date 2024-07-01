@@ -6,6 +6,7 @@ model = pickle.load(open('knn_model.pkl', 'rb'))
 st.title('Cek Air Quality')
 
 with st.form("Inputvar"):
+    st.sidebar.header('Input Variable Prediktif Air')
     AQI= st.sidebar.number_input('Input AQI')
     PM10= st.sidebar.number_input('Input PM10')
     PM2_5= st.sidebar.number_input('Input PM2_5')	
