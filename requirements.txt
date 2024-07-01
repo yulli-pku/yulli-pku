@@ -1,4 +1,4 @@
 streamlit
 streamlit-aggrid
-pickle
+pickle=24.1.1
 
