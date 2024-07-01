@@ -11,14 +11,14 @@ with st.form("Inputvar"):
     PM2_5= st.sidebar.number_input('Input PM2_5')	
     NO2= st.sidebar.number_input('Input NO2')
     SO2= st.sidebar.number_input('Input SO2')	
-    O3= st.number_input('Input O3')
-    Temperature= st.number_input('Input Temperature')
-    Humidity= st.number_input('Input Humidity')	
-    WindSpeed= st.number_input('Input WindSpeed')
-    RespiratoryCases= st.number_input('Input RespiratoryCases')
-    CardiovascularCases	= st.number_input('Input CardiovascularCases')
-    HospitalAdmissions= st.number_input('Input HospitalAdmissions')
-    HealthImpactClass= st.number_input('Input HealthImpactClass')
+    O3= st.sidebar.number_input('Input O3')
+    Temperature= st.sidebar.number_input('Input Temperature')
+    Humidity= st.sidebar.number_input('Input Humidity')	
+    WindSpeed= st.sidebar.number_input('Input WindSpeed')
+    RespiratoryCases= st.sidebar.number_input('Input RespiratoryCases')
+    CardiovascularCases	= st.sidebar.number_input('Input CardiovascularCases')
+    HospitalAdmissions= st.sidebar.number_input('Input HospitalAdmissions')
+    HealthImpactClass= st.sidebar.number_input('Input HealthImpactClass')
 
 predict = ''
 
