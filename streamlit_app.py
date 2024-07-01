@@ -8,15 +8,17 @@ st.image("kotaair.png")
 with st.form("Inputvar"):
     st.sidebar.header('Input Variable Prediktif Air')   
     AQI= st.sidebar.slider('Input AQI',0.00,10.00)
+    st.sidebar.write('AQI : ',AQI)
     PM10= st.sidebar.slider('Input PM10',0.00,10.00)
+    st.sidebar.write('PM10 : ',PM10)
     PM2_5= st.sidebar.slider('Input PM2_5',0.00,10.00)	
-    st.write('PM2_5 : ',PM2_5)
+    st.sidebar.write('PM2_5 : ',PM2_5)
     NO2= st.sidebar.slider('Input NO2',0.00,10.00)
-    st.write('NO2 : ',NO2)
+    st.sidebar.write('NO2 : ',NO2)
     SO2= st.sidebar.slider('Input SO2',0.00,10.00)	
-    st.write('SO2 : ',SO2)
+    st.sidebar.write('SO2 : ',SO2)
     O3= st.sidebar.slider('Input O3',0.00,10.00)
-    st.write('O3 : ',O3)
+    st.sidebar.write('O3 : ',O3)
     Temperature= st.sidebar.slider('Input Temperature',0.00,10.00)
     st.write('Temperature : ',Temperature)
     Humidity= st.sidebar.slider('Input Humidity',0.00,10.00)
@@ -31,10 +33,7 @@ with st.form("Inputvar"):
     st.write('HospitalAdmissions : ',HospitalAdmissions)
     HealthImpactClass= st.sidebar.slider('Input HealthImpactClass',0,100)
     st.write('HealthImpactClass : ',HealthImpactClass)
-    
-with col2:
-    st.sidebar.write('AQI : ',AQI)
-    st.sidebar.write('PM10 : ',PM10)
+
 predict = ''
 
 if st.button('Cek Air Quality'):
