@@ -27,4 +27,4 @@ if st.button('Cek Air Quality'):
     predict = model.predict(
         [[AQI,PM10,PM2_5,NO2,SO2,O3,Temperature,Humidity,WindSpeed,RespiratoryCases,CardiovascularCases,HospitalAdmissions,HealthImpactClass]]
     )
-    st.write ('Cek Air Quality : ', predict)
+    st.write ('Kondisi Udara diprediksi : ', predict)
