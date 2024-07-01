@@ -1,7 +1,7 @@
 import pickle
 import streamlit as st
 
-model = pickle.load(open('knn_mode.pkl', 'rb'))
+model = pickle.load(open('knn_model.pkl', 'rb'))
 
 st.title('Cek Air Quality')
 
