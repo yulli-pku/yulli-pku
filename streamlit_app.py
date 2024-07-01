@@ -5,7 +5,7 @@ model = pickle.load(open('knn_model.pkl', 'rb'))
 st.title('Cek Air Quality')
 st.image("kotaair.png")
 
-col1,col2 = st.sidebar.columns([3,1])
+col1,col2 = st.sidebar.columns([1,1])
 st.sidebar.header('Input Variable Prediktif Air')   
 with col1:    
     AQI= st.sidebar.slider('Input AQI',0.00,10.00)
