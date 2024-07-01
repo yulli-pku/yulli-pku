@@ -4,14 +4,13 @@ import streamlit as st
 model = pickle.load(open('knn_model.pkl', 'rb'))
 
 st.title('Cek Air Quality')
-sidebar_header=st.sidebar.subheader('Sidebar menu')
 
 with sidebar_header:
-    AQI= st.number_input('Input AQI')
-    PM10= st.number_input('Input PM10')
-    PM2_5= st.number_input('Input PM2_5')	
-    NO2= st.number_input('Input NO2')
-    SO2= st.number_input('Input SO2')	
+    AQI= st.sidebar.number_input('Input AQI')
+    PM10= st.sidebar.number_input('Input PM10')
+    PM2_5= st.sidebar.number_input('Input PM2_5')	
+    NO2= st.sidebar.number_input('Input NO2')
+    SO2= st.sidebar.number_input('Input SO2')	
     O3= st.number_input('Input O3')
     Temperature= st.number_input('Input Temperature')
     Humidity= st.number_input('Input Humidity')	
