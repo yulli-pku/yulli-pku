@@ -22,7 +22,6 @@ predict = ''
 
 if st.button('Cek Air Quality'):
     predict = model.predict(
-        [[year, mileage, tax, mpg, engineSize]]
+        [[AQI,PM10,PM2_5,NO2,SO2,O3,Temperature,Humidity,WindSpeed,RespiratoryCases,CardiovascularCases,HospitalAdmissions]]
     )
-    st.write ('Estimasi harga mobil bekas dalam Ponds : ', predict)
-    st.write ('Estimasi harga mobil bekas dalam IDR (Juta) :', predict*19000)
+    st.write ('Cek Air Quality : ', predict)
