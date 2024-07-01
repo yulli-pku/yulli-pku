@@ -9,7 +9,7 @@ with st.form("Inputvar"):
     st.sidebar.header('Input Variable Prediktif Air')   
     
     AQI= st.sidebar.slider('Input AQI',0.00,10.00)
-    st.write('AQI : ',AQI)
+    st.sidebar.write('AQI : ',AQI)
     PM10= st.sidebar.slider('Input PM10',0.00,10.00)
     st.write('PM10 : ',PM10)
     PM2_5= st.sidebar.slider('Input PM2_5',0.00,10.00)	
